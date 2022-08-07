@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="main">
+			<div class="form__container">
+				<form action="#" class="form__article-form">
+
+					<div class="article-form__text">
+						Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+					</div>
+
+					<fieldset class="article-form__field">
+						<label class="article-form__title" for="title">
+							Название статьи:
+						</label>
+
+						<input class="article-form__title-inp" type="text" name="title" id="title">
+					</fieldset>
+
+					<fieldset class="article-form__field">
+						<label class="article-form__rubric-label" for="rubric">
+							Рубрика:
+						</label>
+
+						<label class="article-form__rubric-select" for="rubric">
+							<select name="rubric">
+								<option value="program" id="rubric" disabled selected>
+									программирование
+								</option>
+								<option value="program" id="rubric">
+									политика
+								</option>
+								<option value="program" id="rubric">
+									журналистика
+								</option>
+							</select>
+						</label>
+					</fieldset>
+
+					<fieldset class="main-form__field">
+
+						<label class="article-form__publication">
+							Публикация:
+						</label>
+
+						<label class="main-form__label" for="sait">
+							<input class="main-form__inp" type="radio" name="sait" id="sait">
+							на сайте
+						</label>
+
+						<label class="main-form__label" for="magazine">
+							<input class="main-form__inp" type="radio" name="magazine" id="magazine">
+							в журнале
+						</label>
+
+						<label class="main-form__label" for="website-magazine">
+							<input class="main-form__inp" type="radio" name="website-magazine" id="website-magazine">
+							на сайте и в журнале
+						</label>
+
+						<label class="main-form__label-comment" for="comment">
+							Разрешить комментарии:
+							<input class="main-form__inp-check" type="checkbox" name="comment" id="comment" checked>
+						</label>
+
+						<label class="main-form__label-article-text" for="article-text">
+							Текст статьи:
+							<textarea class="main-form__article-text" name="article-text" id="article-text"></textarea>
+						</label>
+
+						<input class="main-form__button" type="button" name="submit" value="Опубликовать">
+					</fieldset>
+				</form>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
